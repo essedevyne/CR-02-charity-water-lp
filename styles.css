@@ -25,11 +25,11 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #222;
+    font-family: Arial, sans-serif; /* Easy to read font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb; /* Light blue background for a clean look */
+    color: #222;
 }
 
 /* Add a slight shadow and rounded corners to each section for depth */
@@ -43,16 +43,17 @@ section {
 
 /* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
+    background-color: #2d9cdb; /* Brand blue color */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative; /* Needed for overlay */
+
   /* Set a background image that covers the whole section */
   background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
-  text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
 
   /* Add a dark overlay for better text readability */
   /* This uses a simple linear-gradient overlay */
@@ -62,7 +63,8 @@ section {
 
 /* Make the headline bold and modern */
 .hero h1 {
-  font-size: 2.5em;
+    margin-bottom: 10px;
+    font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -71,17 +73,19 @@ section {
 
 /* Style the subheadline */
 .hero p {
-  font-size: 1.2em;
+    font-size: 1.2em;
   margin-top: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
 }
 
 /* Story Section Styles */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Add accent color to section headings */
@@ -91,44 +95,52 @@ h2 {
   font-weight: bold;
 }
 
+/* Impact story section styles */
+.impact-story {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #eaf6fb;
+    border-radius: 8px;
+}
+.impact-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.impact-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2d9cdb;
+}
+
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 30px 0;
 }
-
-/* Style the impact story image */
-.impact-image {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+.call-to-action h2 {
+    color: #2d9cdb;
 }
-
-/* Donate Button Styles */
 .donate-button {
-  display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
-  padding: 14px 32px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
-  transition: background 0.3s, transform 0.2s;
-  border: none;
-  cursor: pointer;
+    display: inline-block;
+    background-color: #2d9cdb;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background 0.2s;
 }
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
-  transform: translateY(-2px) scale(1.04); /* Slight lift */
+    background-color: #217dbb;
 }
 
 /* Add some spacing between sections */
